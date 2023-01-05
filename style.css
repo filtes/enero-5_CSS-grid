@@ -1,0 +1,111 @@
+/* .*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+} */
+
+.container{
+    display:grid;
+    /* grid-template-columns: 1fr; */
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    width: 1200px;
+    /* height: 500px; */
+
+}
+.header{
+    background-color: rgb(195, 150, 209);
+    display:grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(1, auto);
+    grid-template-rows: 1fr;
+    grid-template-areas: "logo nav nav nav nav buscar social";
+    height: 100px;
+    width: 100%;
+
+}
+.logo{
+    /* background: purple; */
+    padding: 10px;
+    grid-area: "logo";
+   
+}
+.nav{
+    /* background: rgb(7, 226, 54); */
+    padding: 10px;
+    grid-area: "nav";
+    
+}
+.buscar{
+    /* background: purple; */
+    padding: 10px;
+    grid-area: "buscar";
+   
+}
+.social{
+    /* background: rgb(7, 211, 226); */
+    padding: 10px;
+    grid-area: "social";
+}
+.section{
+    background-color: gold;
+    padding: 10px;
+    height: 300px;
+    /* display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(1, auto);
+    grid-template-areas: "sidebar sidebar articulo articulo articulo aside aside"
+                            "nav-interno nav-interno nav-interno nav-interno nav-interno nav-interno nav-interno";
+    
+}
+    
+
+    .sidebar{
+        background: purple;
+        /* padding: 10px;
+        flex: 1 1 auto; */
+        grid-area: "sidebar";
+    }
+    .articulo{
+        background: rgb(7, 226, 54);
+        padding: 10px;
+        grid-area: "articulo";
+    }
+    .aside{
+        background: rgb(7, 211, 226);
+        padding: 10px;
+        /* flex: 1 1 auto; */
+        grid-area: "aside";
+}
+.nav-interno{
+    /* background: rgb(7, 65, 226); */
+    /* padding: 10px; */
+    /* height: 100px; */
+    grid-area: "nav-interno";
+    /* flex: 1 1 auto; */
+    
+}
+.footer{
+    background: red;
+    display:grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(1, auto);
+    height: 100px;
+    grid-template-areas: "pie-pagina pie-pagina direccion direccion direccion contacto contacto";
+
+}
+.pie-pagina{
+    grid-area: "pie-pagina";
+
+}
+.contacto{
+    grid-area: "contacto";
+    
+}
+.contacto{
+    grid-area: "direccion";
+    
+}
+
